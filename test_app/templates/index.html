@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PPL - Test Deploy</title>
+  </head>
+  <body>
+    {% if data_users %} {% for user in data_users %}
+    <h1>Hello my name is {{ user.name }}</h1>
+    <hr />
+    <article>NPM : {{ user.npm }}</article>
+    <article>Course : {{ user.course }}</article>
+    {% endfor %} {% endif %}
+  </body>
+</html>
